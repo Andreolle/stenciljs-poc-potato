@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.potato {
+  position: relative;
+  width: 260px;
+  img {
+    width: 100%;
+    cursor: pointer;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+  .text {
+    position: absolute;
+    top: 40px;
+    font-size: 20px;
+    right: -70px;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-25px);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-25px);
+  }
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
